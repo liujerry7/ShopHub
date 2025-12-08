@@ -1,0 +1,70 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.ncb
+*.aps
+*.sdf
+*.opensdf
+*.opendb
+*.cachefile
+ipch/
+*.obj
+*.lib
+*.exp
+*.ilk
+*.pdb
+*.tlog
+*.log
+*.bak
+*.bsc
+*.sbr
+*.res
+*.pch
+*.idb
+*.iobj
+*.ipdb
+*.ipch
+*.map
+*.manifest
+*.lastbuildstate
+*.VC.db
+*.VC.VC.opendb
+*.vshost.*
+*.testsettings
+*.trx
+*.natvis
+*.codeanalysisrulecollection
+*.ruleset
+*.wrk
+*.buildlog
+*.dsk
+
+# Executables
+*.exe
+*.dll
+*.com
+*.ocx
+
+# Intermediate files
+*.obj
+*.lib
+*.exp
+
+# User-specific files
+*.user
+*.suo
+*.sln.docstates
+
+# CMake files (if used)
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeOutput.log
+CMakeError.log
+build/
+out/
+
+# Other
+Thumbs.db
+Desktop.ini
