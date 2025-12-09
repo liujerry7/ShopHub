@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="ShopHub.vcxproj" />
+  <Project Path="ShopHub.vcxproj" Id="f6403df2-b8fc-47e6-a505-7b4d75258af6" />
 </Solution>
