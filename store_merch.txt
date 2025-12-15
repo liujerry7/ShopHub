@@ -1,0 +1,2 @@
+Pants,20.000000,16,Apparel
+Computer,50.000000,100,Electronics

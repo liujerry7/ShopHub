@@ -1,1 +1,3 @@
-liujerry7,password,0
+liujerry7,password,100.000000,y
+jumbers,password,60.000000,n
+bob,password,1000.000000,n

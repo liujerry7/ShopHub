@@ -127,12 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="app.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="user.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="app.h" />
+    <ClInclude Include="customer.h" />
+    <ClInclude Include="merchandise.h" />
+    <ClInclude Include="merchant.h" />
     <ClInclude Include="store.h" />
     <ClInclude Include="user.h" />
   </ItemGroup>
