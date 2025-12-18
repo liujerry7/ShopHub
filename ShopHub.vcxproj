@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="user.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="app.h" />
     <ClInclude Include="customer.h" />
+    <ClInclude Include="exception.h" />
     <ClInclude Include="merchandise.h" />
     <ClInclude Include="merchant.h" />
     <ClInclude Include="store.h" />

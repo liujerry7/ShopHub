@@ -6,31 +6,19 @@ using namespace std;
 
 class Merchandise {
 public:
-	Merchandise(string newName, float newPrice, int newQuantity) {
-		name = newName;
-		price = newPrice;
-		quantity = newQuantity;
-	}
+	// Constructor
+	Merchandise(string newName, float newPrice, int newQuantity);
 
-	string getName() {
-		return name;
-	}
+	// Getters
+	string getName();
+	float getPrice();
+	int getQuantity();
 
-	float getPrice() {
-		return price;
-	}
+	// Domain logic
+	void addQuantity(int amount);
 
-	int getQuantity() {
-		return quantity;
-	}
-
-	void addQuantity(int amount) {
-		quantity += amount;
-	}
-
-	string serialize() {
-		return name + "," + to_string(price) + "," + to_string(quantity);
-	}
+	// Serializers
+	string serialize();
 
 private:
 	string name;

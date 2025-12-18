@@ -8,33 +8,19 @@ using namespace std;
 
 class Store {
 public:
-	Store(string newName) {
-		name = newName;
-	}
+	// Constructor
+	Store(string newName);
 
-	string getName() {
-		return name;
-	}
+	// Getters
+	string getName();
+	vector<Merchandise> getMerch();
 
-	vector<Merchandise> getMerch() {
-		return merch;
-	}
+	// Setters
+	void setMerch(vector<Merchandise> newMerch);
 
-	void setMerch(vector<Merchandise> newMerch) {
-		merch = newMerch;
-	}
-
-	void addMerch(Merchandise m) {
-		merch.push_back(m);
-	}
-
-	void sell(Merchandise m) {
-		for (auto& storeMerch : merch) {
-			if (storeMerch.getName() == m.getName()) {
-				storeMerch.addQuantity(-m.getQuantity());
-			}
-		}
-	}
+	// Domain logic
+	void addMerch(Merchandise m);
+	void sell(Merchandise m);
 
 private:
 	string name;

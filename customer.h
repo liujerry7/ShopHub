@@ -7,11 +7,10 @@ using namespace std;
 
 class Customer : public User {
 public:
-	Customer(string newUsername, string newPassword, float newBalance) :
-		User(newUsername, newPassword, newBalance) {
-	}
+	// Constructor
+	Customer(string newUsername, string newPassword, float newBalance);
 
-	string serialize() override {
-		return username + "," + password + "," + to_string(balance) + ",n";
-	}
+	// Serialization
+	string serialize() override;
+	static Customer deserialize(string txt);
 };

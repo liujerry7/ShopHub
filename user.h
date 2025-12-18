@@ -9,55 +9,26 @@ using namespace std;
 
 class User {
 public:
-	User(string newUsername, string newPassword, float newBalance) {
-		username = newUsername;
-		password = newPassword;
-		balance = newBalance;
-	}
+	// Constructor
+	User(string newUsername, string newPassword, float newBalance);
 
+	// Desctructor
 	virtual ~User() = default;
 
-	string getUsername() {
-		return username;
-	}
+	// Getters
+	string getUsername();
+	string getPassword();
+	float getBalance();
+	vector<Merchandise> getMerch();
 
-	string getPassword() {
-		return password;
-	}
+	// Setters
+	void setMerch(vector<Merchandise> newMerch);
 
-	float getBalance() {
-		return balance;
-	}
+	// User logic
+	void buy(Merchandise m);
+	void addMerch(Merchandise m);
 
-	vector<Merchandise> getMerch() {
-		return merch;
-	}
-
-	void buy(Merchandise m) {
-		bool exists = false;
-
-		for (auto& userMerch : merch) {
-			if (userMerch.getName() == m.getName()) {
-				userMerch.addQuantity(m.getQuantity());
-				exists = true;
-			}
-		}
-
-		if (!exists) {
-			merch.push_back(m);
-		}
-
-		balance -= m.getPrice() * m.getQuantity();
-	}
-
-	void setMerch(vector<Merchandise> newMerch) {
-		merch = newMerch;
-	}
-
-	void addMerch(Merchandise m) {
-		merch.push_back(m);
-	}
-
+	// Serialization logic
 	virtual string serialize() = 0;
 
 protected:

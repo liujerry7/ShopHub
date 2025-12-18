@@ -1,2 +1,3 @@
 Pants,20.000000,16,Apparel
 Computer,50.000000,100,Electronics
+ToiletPaper,5.000000,9,Toiletries
