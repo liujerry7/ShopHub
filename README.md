@@ -1,4 +1,5 @@
-hopHub is a console-based shopping mall simulation that models real online marketplaces.
+## ShopHub
+ShopHub is a console-based shopping mall simulation that models real online marketplaces.
 
 Users authenticate into the system with login information like username/password and are routed into different experiences based on their role. Customers can browse stores, view merchandise with prices and quantities, and make purchases, while Merchants can create stores, manage inventory, and add new products.
 
